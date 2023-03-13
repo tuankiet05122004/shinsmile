@@ -6,7 +6,142 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --header-bg: #10375c;
+}
+
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+/* comon */
+
+.container {
+    width: 1170px;
+    max-width: calc(100%-48px);
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 100vh;
+    background-color: var(--header-bg);
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 60px;
+
+    min-width: 205px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 99px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #2e80ce;
+    border: 1px solid #2e80ce;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* logo */
+
+.logo {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    display: inline-flex;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    background-color: #2e80ce;
+    width: 3em;
+    height: 3em;
+}
+
+.logo__circle::after {
+    background-color: #fff;
+    top: 1.1em;
+    left: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    position: absolute;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    line-height: 1.6em;
+    text-align: right;
+}
+
+.logo__band {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__text--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* navbar */
+
+.navbar__list {
+    display: flex;
+}
+
+.action__login,
+.navbar__link {
+    display: inline-block;
+    padding: 4px 21px;
+    color: #c9d2da;
+    font-size: 16px;
+    font-weight: 300;
+}
+.navbar__link:hover,
+.navbar__link--active {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+    position: relative;
+    top: -2px;
+    right: 6px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* action */
+.action__signup {
+    --height: 44px;
+    height: var(--height);
+    min-width: 104px;
+    line-height: var(--height);
 }

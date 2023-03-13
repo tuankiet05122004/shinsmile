@@ -93,14 +93,57 @@
         <meta name="theme-color" content="#ffffff" />
 
         <!-- css -->
-        <link
-            rel="stylesheet"
-            href="./htmlcss-project-03-main/assets/css/reset.css"
-        />
-        <link
-            rel="stylesheet"
-            href="./htmlcss-project-03-main/assets/css/style.css"
-        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="/">
+                        <div class="logo">
+                            <span class="logo__circle"></span>
+                            <span class="logo__text">
+                                <span class="logo__band">shine</span>
+                                <span class="logo__band logo__text--small">
+                                    smile
+                                </span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- navbar -->
+                    <nav class="header-navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a
+                                    href="#!"
+                                    class="navbar__link navbar__link--active"
+                                >
+                                    Home
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Services</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Doctors</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- action -->
+                    <div class="header-action">
+                        <a href="#!" class="action__login">Log In</a>
+                        <button href="#!" class="action__signup btn">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
